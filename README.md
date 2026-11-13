@@ -1,31 +1,37 @@
 # Design Critique Coach
 
-Practise giving design feedback that explains what you see, why it matters, and what to try next. Design Critique Coach is a Codex skill for designers and anyone who reviews digital interfaces.
+Practise giving design feedback that explains what you see, why it matters, and what to try next. Design Critique Coach is a portable [Agent Skill](https://agentskills.io/specification) for designers and anyone who reviews digital interfaces.
 
 - **Critique a screen.** Share a screenshot and the user’s task. Get findings grounded in visible details and checks for claims that need a prototype or a user test.
 - **Improve your critique.** Share your own comments. Get feedback on your evidence, reasoning, communication, and next step. Rewrite one comment and compare it with your first draft.
 - **Keep a practice log.** Save your comments and revisions in Markdown, with compressed WebP copies of the screenshots alongside your notes.
 
-## Use the skill in Codex
+## Use the skill in your agent
 
-Open this repository in Codex and ask for a screen critique or reviewer coaching. The repository instructions point Codex to the skill.
+The entire skill lives in [`skills/design-critique-coach/`](skills/design-critique-coach/). Keep `SKILL.md` and its `references/` folder together. The coaching instructions require no Python, Node.js, or npm.
 
-To use the skill in another project, run the following from the root of this repository:
+For local agents, copy the whole `design-critique-coach` folder into one of these directories.
 
-```sh
-mkdir -p ~/.agents/skills
-cp -R skills/design-critique-coach ~/.agents/skills/
-```
+| Agent | User-level skill directory |
+| --- | --- |
+| Codex | `~/.agents/skills/` ([docs](https://developers.openai.com/api/reference/cli#use-the-cli-from-a-coding-agent)) |
+| Claude Code | `~/.claude/skills/` ([docs](https://code.claude.com/docs/en/skills)) |
+| Cursor | `~/.cursor/skills/` or `~/.agents/skills/` ([docs](https://cursor.com/docs/skills)) |
+| Grok Build | `~/.grok/skills/` or `~/.agents/skills/` ([docs](https://docs.x.ai/build/features/skills-plugins-marketplaces)) |
 
-Open a new Codex chat, attach a screenshot, and try:
+For Claude on the web or in the desktop app, zip the `design-critique-coach` folder and upload it as a custom skill. For Grok Bot, share the skill instructions and rubric and ask the Bot to save the workflow as a private skill. [Claude custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) · [Grok Bot skills](https://docs.x.ai/grok-bot/skills-routines-and-automations)
 
-> Use $design-critique-coach to coach me on this critique. The shopper is trying to check their order before paying. My comment is “The Continue button is confusing. Make it bigger.”
+In a session that accepts images, attach a screenshot and ask:
 
-The [skill instructions](skills/design-critique-coach/SKILL.md) and [reviewer scorecard](skills/design-critique-coach/references/coach-rubric.md#reviewer-feedback) can also be read directly. See [OpenAI’s skill installation guidance](https://developers.openai.com/api/reference/cli#use-the-cli-from-a-coding-agent) for the supported folders.
+> Use Design Critique Coach to coach me on this critique. The shopper is trying to check their order before paying. My comment is “The Continue button is confusing. Make it bigger.”
+
+If you’re building your own agent, load the [skill instructions](skills/design-critique-coach/SKILL.md) when the user asks for a critique. Make the [rubric](skills/design-critique-coach/references/coach-rubric.md) available as a reference and pass the screenshot to an image-capable model along with the user’s task and comments. In a chat app without skill installation, attach or paste both Markdown files as instructions.
+
+The GitHub folder is the distribution format for the skill. A Node.js agent can read those Markdown files directly. An npm package would be useful if you want to distribute a JavaScript API or CLI for managing the practice log.
 
 ## Start a practice session
 
-The log is optional. From this project folder, with Python 3 and Pillow installed:
+You can log a session by hand with the [Markdown template](templates/critique.md). The optional command-line helper uses Python and Pillow to compress screenshots and link them in your notes. From this project folder, with Python 3 and Pillow installed:
 
 ```sh
 python3 tools/practice.py new "Checkout button" "/path/to/before.png"
