@@ -1,12 +1,24 @@
 # Coach rubric
 
-Use this rubric when reviewing a screenshot or giving a reviewer feedback on their own critique.
+Use this rubric to review UX/UI in digital products or to give a reviewer feedback on their own critique.
 
 ## Before giving feedback
 
-- Start with the intended user, their immediate task, and the screen state. If the task is missing, state a reasonable assumption and keep the findings conditional on it.
-- Scan the screen for hierarchy and grouping, readability, visible controls and states, and whether labels set the right expectation. Apply the product’s design system and platform conventions when known.
-- Give one strength to preserve and up to three findings, ordered by impact on the task. Treat preference as a design choice unless you can explain its effect on the goal.
+- Start with the intended user, their immediate task, and where this screen sits in the flow. Use the product goal, design stage, and constraints when supplied. If the task is missing, state a reasonable assumption and keep the findings conditional on it.
+- At concept stage, focus on whether the information and actions support the task. For designs close to release, also check visible component consistency, labels, and edge states relevant to the task.
+- Give one strength to preserve and up to three findings. Prioritise barriers to completing the task and mistakes that are costly to recover from.
+
+## Product UX/UI review lenses
+
+Pick the lenses that best fit the task and the evidence provided.
+
+| Lens | What to examine |
+| --- | --- |
+| User task and flow | Can the user tell where they are, what to do next, and what to expect from the primary action? With multiple screens, check whether context, progress, and terminology carry across steps. |
+| Interaction and states | Can users recognise controls and distinguish their current state? Review loading, empty, error, success, and permission states when shown or relevant to the task. Ask for the specific state or transition needed to judge behaviour. |
+| UI hierarchy and content | Do layout, spacing, and typography direct attention to the right information and actions? Do labels and instructions describe the outcome in the user’s language? |
+| Accessibility | Flag visible risks such as low contrast, colour-only status cues, or labels that are difficult to read. Specify what to measure or test in the live interface. |
+| Design system and platform | Use the product’s component guidance and platform conventions when supplied. If a variation appears intentional, ask how it supports this task. |
 
 ## For each finding
 
@@ -53,3 +65,4 @@ On a checkout screen with a bottom button labelled “Continue,” the reviewer 
 | --- | --- | --- | --- |
 | 2026-11-13 | Start with screenshot evidence, explain the likely effect, and say what would verify it. | Baseline from the references above. | To be tested in practice. |
 | 2026-11-13 | Score one reviewer comment on four criteria and use the same criteria on the rewrite. | Added to give the reviewer feedback on their reasoning and communication. | To be tested with a practice session. |
+| 2026-11-13 | Tie UX/UI critique to the user’s task, flow step, and design stage. | Narrowed the coach to digital product design. | To be tested on a product screen or flow. |

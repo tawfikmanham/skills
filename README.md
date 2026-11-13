@@ -1,16 +1,16 @@
-# Design Critique Coach
+# Product Design Critique Coach
 
-Practise giving design feedback that explains what you see, why it matters, and what to try next. Design Critique Coach is a portable [Agent Skill](https://agentskills.io/specification) for designers and anyone who reviews digital interfaces.
+Product Design Critique Coach is a portable [Agent Skill](https://agentskills.io/specification) for reviewing the UX and UI of digital products. Use it with a screenshot, a mockup, or a sequence of screens from a flow such as onboarding, checkout, or settings.
 
-- **Critique a screen.** Share a screenshot and the user’s task. Get findings grounded in visible details and checks for claims that need a prototype or a user test.
+- **Critique a product screen or flow.** Share the user’s task and the relevant screens. Review navigation, interaction states, hierarchy, labels, and accessibility through the parts that affect that task.
 - **Improve your critique.** Share your own comments. Get feedback on your evidence, reasoning, communication, and next step. Rewrite one comment and compare it with your first draft.
 - **Keep a practice log.** Save your comments and revisions in Markdown, with compressed WebP copies of the screenshots alongside your notes.
 
 ## Use the skill in your agent
 
-The entire skill lives in [`skills/design-critique-coach/`](skills/design-critique-coach/). Keep `SKILL.md` and its `references/` folder together. The coaching instructions require no Python, Node.js, or npm.
+The entire skill lives in [`skills/product-design-critique-coach/`](skills/product-design-critique-coach/). Keep `SKILL.md` and its `references/` folder together. The coaching instructions require no Python, Node.js, or npm.
 
-For local agents, copy the whole `design-critique-coach` folder into one of these directories.
+For local agents, copy the whole `product-design-critique-coach` folder into one of these directories.
 
 | Agent | User-level skill directory |
 | --- | --- |
@@ -19,13 +19,15 @@ For local agents, copy the whole `design-critique-coach` folder into one of thes
 | Cursor | `~/.cursor/skills/` or `~/.agents/skills/` ([docs](https://cursor.com/docs/skills)) |
 | Grok Build | `~/.grok/skills/` or `~/.agents/skills/` ([docs](https://docs.x.ai/build/features/skills-plugins-marketplaces)) |
 
-For Claude on the web or in the desktop app, zip the `design-critique-coach` folder and upload it as a custom skill. For Grok Bot, share the skill instructions and rubric and ask the Bot to save the workflow as a private skill. [Claude custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) · [Grok Bot skills](https://docs.x.ai/grok-bot/skills-routines-and-automations)
+For Claude on the web or in the desktop app, zip the `product-design-critique-coach` folder and upload it as a custom skill. For Grok Bot, share the skill instructions and rubric and ask the Bot to save the workflow as a private skill. [Claude custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) · [Grok Bot skills](https://docs.x.ai/grok-bot/skills-routines-and-automations)
 
 In a session that accepts images, attach a screenshot and ask:
 
-> Use Design Critique Coach to coach me on this critique. The shopper is trying to check their order before paying. My comment is “The Continue button is confusing. Make it bigger.”
+> Use Product Design Critique Coach to coach me on this critique. The shopper is trying to check their order before paying. My comment is “The Continue button is confusing. Make it bigger.”
 
-If you’re building your own agent, load the [skill instructions](skills/design-critique-coach/SKILL.md) when the user asks for a critique. Make the [rubric](skills/design-critique-coach/references/coach-rubric.md) available as a reference and pass the screenshot to an image-capable model along with the user’s task and comments. In a chat app without skill installation, attach or paste both Markdown files as instructions.
+If you installed the earlier version, replace the old `design-critique-coach` folder with `product-design-critique-coach`. Where your agent uses a command to invoke the skill, use the new name.
+
+If you’re building your own agent, load the [skill instructions](skills/product-design-critique-coach/SKILL.md) when the user asks for a critique. Make the [rubric](skills/product-design-critique-coach/references/coach-rubric.md) available as a reference and pass the screenshot to an image-capable model along with the user’s task and comments. In a chat app without skill installation, attach or paste both Markdown files as instructions.
 
 The GitHub folder is the distribution format for the skill. A Node.js agent can read those Markdown files directly. An npm package would be useful if you want to distribute a JavaScript API or CLI for managing the practice log.
 

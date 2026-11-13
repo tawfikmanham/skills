@@ -4,7 +4,8 @@
 - **Status:** Open
 
 - **User and task:** Who is this for, and what are they trying to do?
-- **Platform and screen state:** What device or step does this capture? What is outside the frame?
+- **Platform, flow step, and state:** Where does this screen sit in the product journey? What is outside the frame?
+- **Product goal and design stage (optional):** What should this design achieve, and how far along is it?
 - **Focus:** What kind of feedback do you want on this version?
 
 ## Screenshots
@@ -37,4 +38,4 @@
 - **Change:** What did I revise, and which finding prompted it?
 - **Check:** What did I inspect or test, and with whom if relevant?
 - **Result:** What happened? What is still untested?
-- **Lesson:** What will I look for next time? Does this warrant a change to the [coach rubric](../../skills/design-critique-coach/references/coach-rubric.md)?
+- **Lesson:** What will I look for next time? Does this warrant a change to the [coach rubric](../../COACH-RUBRIC.md)?
