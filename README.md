@@ -64,6 +64,10 @@ Log both attempts in the **Reviewer feedback** section of your notes. Each crite
 
 If you also want the coach’s independent take on the design, share the screenshot and task before revealing your comments and ask for a screen critique.
 
+## Track your progress
+
+Ask the coach to start a progress tracker or copy the blank template to `practice/PROGRESS.md`. Record the project, screen, user task, first pass, rewrite, and next exercise for each session. The template includes a 30-day example with checkpoints you can adapt to your schedule. Git ignores `practice/` in this repository, so your filled tracker stays local by default. [Progress tracker template](skills/product-design-critique-coach/assets/progress-template.md)
+
 ## Attach a design revision
 
 After making a revision, use the session folder name printed by the first command:
