@@ -12,10 +12,10 @@ Product Design Critique Coach is a portable [Agent Skill](https://agentskills.io
 With Node.js 22.20 or later installed, run this from your project.
 
 ```sh
-npx skills add tawfikmanham/product-design-critique-coach --skill product-design-critique-coach --agent codex
+npx skills add tawfikmanham/product-design-critique-coach
 ```
 
-The [Vercel Skills CLI](https://github.com/vercel-labs/skills) fetches the skill and its references from GitHub. For another agent, change `--agent codex` to the agent you use, such as `--agent claude-code` or `--agent cursor`. Add `--global` to make the skill available across your local projects.
+Choose `product-design-critique-coach` and select Codex or the agent you use. Add `--global` to install across projects.
 
 Attach a screenshot in Codex, describe the user's task, and include a comment you wrote.
 
