@@ -5,7 +5,7 @@ Attach a screenshot or mockup to get direct feedback on a product screen. The au
 ## Install and try it
 
 ```sh
-npx skills add tawfikmanham/product-design-critique-coach
+npx skills add tawfikmanham/skills
 ```
 
 Choose `product-design-audit` and select Codex or the agent you use.

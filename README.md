@@ -5,7 +5,7 @@ Two skills for reviewing product interfaces and practising design critique.
 ## Install
 
 ```sh
-npx skills add tawfikmanham/product-design-critique-coach
+npx skills add tawfikmanham/skills
 ```
 
 Choose either or both skills, then select Codex or the agent you use. The [Vercel Skills CLI](https://github.com/vercel-labs/skills) requires Node.js 22.20 or later. Add `--global` to install across projects.

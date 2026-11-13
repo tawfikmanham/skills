@@ -12,7 +12,7 @@ Product Design Critique Coach is a portable [Agent Skill](https://agentskills.io
 With Node.js 22.20 or later installed, run this from your project.
 
 ```sh
-npx skills add tawfikmanham/product-design-critique-coach
+npx skills add tawfikmanham/skills
 ```
 
 Choose `product-design-critique-coach` and select Codex or the agent you use. Add `--global` to install across projects.
