@@ -22,7 +22,7 @@ Pick the lenses that best fit the task and the evidence provided.
 
 ## For each finding
 
-Use **location and visible evidence → likely impact on the task → change to try or check to run**. Quote a visible label or name a region someone can find. Explain the relevant design principle in plain language.
+Use **location and visible evidence → likely impact on the task → relevant principle → change to try or check to run**. Quote a visible label or name a region someone can find. Explain the principle in plain language and link the source where it helps the reviewer understand the finding. Use the [source guide](source-guide.md) to choose a relevant reference.
 
 - **Visible:** Say what the screenshot shows. For example, “The total and the delivery estimate have the same weight.”
 - **Inferred:** Use conditional language when predicting an effect. For example, “Shoppers scanning for their total may have to read both rows.”
@@ -39,7 +39,7 @@ Use this mode when the reviewer shares their own comments. Read the screenshot, 
 | **Communication** | Leaves the main point unclear or makes it personal. | States the main point but blends the observation, interpretation, or request. | Makes the point clear in plain, respectful language and distinguishes what was seen from what was inferred. |
 | **Next step** | Gives the designer nothing concrete to try or verify. | Suggests a broad direction. | Gives a specific change, a question that would resolve the uncertainty, or a check tied to the finding. |
 
-Return one strength to keep, the four scores with brief reasons, and one rewrite challenge focused on the most useful improvement. If several comments share a pattern, mention it briefly while keeping the score attached to the selected comment. Let the reviewer attempt the rewrite before showing a model answer, unless they ask for one. When they reply, score the rewrite against the same screenshot, task, and criteria. Show what changed and give one thing to practise on the next screen. Use the total out of 8 as an optional personal benchmark when all criteria are scored. Compare first draft with rewrite on the same comment, and use the next screen to see whether the habit carries over.
+Return one strength to keep, the four scores with brief reasons, and one rewrite challenge focused on the most useful improvement. Explain one design term or critique technique that helps with that challenge, and cite the relevant source when it adds context. If several comments share a pattern, mention it briefly while keeping the score attached to the selected comment. Let the reviewer attempt the rewrite before showing a model answer, unless they ask for one. A brief example from a different screen can illustrate the technique. When they reply, score the rewrite against the same screenshot, task, and criteria. Show what changed and give one thing to practise on the next screen. Use the total out of 8 as an optional personal benchmark when all criteria are scored.
 
 ### Worked example
 
@@ -50,19 +50,17 @@ On a checkout screen with a bottom button labelled “Continue,” the reviewer 
 - **Reasoning 0/2.** “Confusing” leaves out what the shopper might misunderstand and why.
 - **Communication 1/2.** The point is brief. Separate the visible label from your prediction about how shoppers might read it.
 - **Next step 1/2.** “Make it bigger” gives a direction. Checking whether the button opens a review step or places the order would address the uncertainty about its label.
+- **Term to learn — action label.** The words on a control tell the user what action it performs. On a settings screen, “Save changes” sets a clearer expectation than “OK” when the button saves edits. [GOV.UK Design System: Button](https://design-system.service.gov.uk/components/button/)
 - **Rewrite challenge.** In two sentences, name where the button is, explain the two outcomes a shopper might expect, and ask a question that would tell you which label fits.
 
 ## References
 
-- [NN/g: Design Critiques](https://www.nngroup.com/articles/design-critiques/) for feedback tied to goals.
-- [NN/g: Principles of Visual Design](https://www.nngroup.com/articles/principles-visual-design/) and [Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) for reviewing visible design choices.
-- [W3C: WCAG 2.2](https://www.w3.org/TR/WCAG22/) for web accessibility criteria.
-- [GOV.UK: Moderated Usability Testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing) for testing assumptions with users.
+See the [source guide](source-guide.md) for principles, links, and practice examples.
 
 ## Change log
 
 | Date | Rule added or revised | Evidence from practice | Result when tried again |
 | --- | --- | --- | --- |
-| 2026-11-13 | Start with screenshot evidence, explain the likely effect, and say what would verify it. | Baseline from the references above. | To be tested in practice. |
+| 2026-11-13 | Start with screenshot evidence, explain the likely effect, and say what would verify it. | Baseline from the source guide. | To be tested in practice. |
 | 2026-11-13 | Score one reviewer comment on four criteria and use the same criteria on the rewrite. | Added to give the reviewer feedback on their reasoning and communication. | To be tested with a practice session. |
 | 2026-11-13 | Tie UX/UI critique to the user’s task, flow step, and design stage. | Narrowed the coach to digital product design. | To be tested on a product screen or flow. |

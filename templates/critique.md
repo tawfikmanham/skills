@@ -22,6 +22,7 @@
 
 - **Comment coached:** Which finding did we work on?
 - **What to keep:** What did I explain well?
+- **Principle and source:** What term helps me explain the finding? What will I look for next time?
 - **First score:** Evidence __/2 · Reasoning __/2 · Communication __/2 · Next step __/2
 - **Rewrite challenge:** What’s one thing to improve?
 - **My rewrite:** How would I say it now?
