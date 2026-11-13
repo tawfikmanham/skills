@@ -6,7 +6,19 @@ Product Design Critique Coach is a portable [Agent Skill](https://agentskills.io
 - **Improve your critique.** Share your own comments. Get feedback on your evidence, reasoning, communication, and next step. Rewrite one comment and compare it with your first draft.
 - **Keep a practice log.** Save your comments and revisions in Markdown, with compressed WebP copies of the screenshots alongside your notes.
 
-## Use the skill in your agent
+## Install with one command
+
+With Node.js installed, run this from the project where you want to use the coach:
+
+```sh
+npx skills add tawfikmanham/product-design-critique-coach --skill product-design-critique-coach
+```
+
+The [Vercel Skills CLI](https://github.com/vercel-labs/skills) fetches the skill and its rubric from GitHub. Choose your agent if prompted, or specify one with `--agent codex`, `--agent claude-code`, or `--agent cursor`. Add `--global` to make the skill available across your local projects.
+
+After installing, open your agent and ask it to use **Product Design Critique Coach** with a screenshot and the user’s task.
+
+## Manual install and other agents
 
 The entire skill lives in [`skills/product-design-critique-coach/`](skills/product-design-critique-coach/). Keep `SKILL.md` and its `references/` folder together. The coaching instructions require no Python, Node.js, or npm.
 
@@ -29,7 +41,7 @@ If you installed the earlier version, replace the old `design-critique-coach` fo
 
 If you’re building your own agent, load the [skill instructions](skills/product-design-critique-coach/SKILL.md) when the user asks for a critique. Make the [rubric](skills/product-design-critique-coach/references/coach-rubric.md) available as a reference and pass the screenshot to an image-capable model along with the user’s task and comments. In a chat app without skill installation, attach or paste both Markdown files as instructions.
 
-The GitHub folder is the distribution format for the skill. A Node.js agent can read those Markdown files directly. An npm package would be useful if you want to distribute a JavaScript API or CLI for managing the practice log.
+The skill ships through GitHub. The `npx` command runs the shared installer. A Node.js agent can also read the Markdown files directly.
 
 ## Start a practice session
 
