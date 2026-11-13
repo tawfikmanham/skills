@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Design Audit"
+  short_description: "Audit UX and UI from a screenshot"
+  default_prompt: "Use $product-design-audit to review this screenshot. Tell me what to keep, what to fix first, and what to verify."

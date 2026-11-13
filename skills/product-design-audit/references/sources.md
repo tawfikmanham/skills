@@ -1,0 +1,12 @@
+# Sources for a screenshot audit
+
+Choose a source after identifying the issue. Use the most specific page or criterion that supports the recommendation. Verify the reference before making a specific claim about a guideline, and link it beside the finding. If the source cannot be verified, explain the recommendation from the visible evidence without attributing a requirement to it.
+
+| What you are reviewing | Where to look | How to use it |
+| --- | --- | --- |
+| Usability, labels, feedback, or recovery | [Nielsen Norman Group: 10 Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) | Pick the heuristic that explains how the visible detail might affect the task. Heuristics are review lenses, not evidence that users struggled. |
+| Visual hierarchy, typography, scale, and grouping | [Nielsen Norman Group: Principles of Visual Design](https://www.nngroup.com/articles/principles-visual-design/) | Compare what gets attention first with what the user needs to notice first. |
+| Design psychology and decision-making | Laws of UX: [Law of Proximity](https://lawsofux.com/law-of-proximity/) and [Hick’s Law](https://lawsofux.com/hicks-law/) | Explain a plausible perception or decision cost. Check whether choices can be made easier to compare before recommending that any be removed. Look to the original research for precise empirical claims. |
+| Button roles and form patterns | U.S. Web Design System (USWDS): [Button](https://designsystem.digital.gov/components/button/) and [Form](https://designsystem.digital.gov/components/form/) | Use the relevant pattern as a reference for action wording, labels, or layout. If the product uses its own design system, use its guidance for the component and its states. |
+| Visible error copy | [GOV.UK Design System: Error message](https://design-system.service.gov.uk/components/error-message/) | Check whether the visible message identifies what went wrong and tells the user how to fix it. Use it as a pattern where appropriate. |
+| Web accessibility | W3C WCAG 2.2: [Use of Color](https://www.w3.org/TR/WCAG22/#use-of-color), [Contrast (Minimum)](https://www.w3.org/TR/WCAG22/#contrast-minimum), and [Target Size (Minimum)](https://www.w3.org/TR/WCAG22/#target-size-minimum) | Name the criterion and the relevant condition when applicable. Check contrast against reliable foreground and background values, actual target sizes against the implementation and applicable exceptions, and keyboard and assistive technology behavior on the live interface. |

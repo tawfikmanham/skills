@@ -7,12 +7,26 @@ Product Design Critique Coach is a portable [Agent Skill](https://agentskills.io
 - **Learn the principles behind the feedback.** Use the source guide for terms, citations, and short exercises you can try on another screen. [Sources and practice examples](skills/product-design-critique-coach/references/source-guide.md)
 - **Keep a practice log.** Save your comments and revisions in Markdown, with compressed WebP copies of the screenshots alongside your notes.
 
+## Audit a screenshot
+
+Use [Product Design Audit](skills/product-design-audit/SKILL.md) when you want direct feedback on a screen, including your own work. Attach a screenshot and send:
+
+> Use $product-design-audit to review this screenshot. What should I keep, what should I improve first, and what should I verify?
+
+The screenshot is enough to start. If you know the user’s task or which design system the product uses, add that context. The audit prioritises improvements, links relevant guidance, and flags what needs a prototype or live test. Share a revised screenshot to check what changed. Use the coach when you want feedback on the critique you wrote.
+
+Install the audit in Codex with the [Vercel Skills CLI](https://github.com/vercel-labs/skills). It requires Node.js 22.20 or later.
+
+```sh
+npx skills add tawfikmanham/product-design-critique-coach --skill product-design-audit --agent codex
+```
+
 ## Install with one command
 
 With Node.js installed, run this from the project where you want to use the coach:
 
 ```sh
-npx skills add tawfikmanham/product-design-critique-coach
+npx skills add tawfikmanham/product-design-critique-coach --skill product-design-critique-coach
 ```
 
 The [Vercel Skills CLI](https://github.com/vercel-labs/skills) fetches the skill and its references from GitHub. Choose your agent if prompted, or specify one with `--agent codex`, `--agent claude-code`, or `--agent cursor`. Add `--global` to make the skill available across your local projects.
